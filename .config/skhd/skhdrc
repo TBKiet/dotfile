@@ -86,6 +86,6 @@ alt - return : "${HOME}"/.config/yabai/scripts/open_iterm2.sh
 shift + lalt - space : sketchybar --bar hidden=toggle
 
 #creare a new space
-ctrl + alt - n : yabai -m space --create
+ctrl + alt + cmd - n : yabai -m space --create
 #delete a space
-ctrl + alt - d : yabai -m space --destroy
+ctrl + alt + cmd - d : yabai -m space --destroy
