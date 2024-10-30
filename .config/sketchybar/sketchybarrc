@@ -46,13 +46,13 @@ default=(
   label.font="SF Pro:Semibold:15.0"
   icon.color=$WHITE
   label.color=$WHITE
-  background.color=$ITEM_BG_COLOR
-  background.corner_radius=5
+  background.color=$BAR_COLOR
+  background.corner_radius=10
   background.height=24
-  icon.padding_left=10
-  icon.padding_right=4
-  label.padding_left=4
-  label.padding_right=10
+  icon.padding_left=6
+  icon.padding_right=6
+  label.padding_left=2
+  label.padding_right=4
 )
 sketchybar --default "${default[@]}"
 ##### Left-side items #####
@@ -66,6 +66,11 @@ source $ITEM_DIR/volume.sh
 source $ITEM_DIR/battery.sh
 source $ITEM_DIR/ram.sh
 source $ITEM_DIR/cpu.sh
+
+sketchybar --add bracket activity ram cpu                      \
+           --set         activity background.color=$ITEM_BG_COLOR     \
+                         background.border_width=0                  \
+                         background.color=$BAR_COLOR                \
 # source $ITEM_DIR/keyboard.sh
 ##### Adding Mission Control Space Indicators #####
 
