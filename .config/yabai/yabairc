@@ -51,7 +51,7 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
 # global settings
 yabai -m config external_bar               all:40:0       \
-                mouse_follows_focus        off            \
+                mouse_follows_focus        on            \
                 focus_follows_mouse        off            \
                 window_zoom_persist        off            \
                 window_placement           second_child   \
@@ -60,7 +60,7 @@ yabai -m config external_bar               all:40:0       \
                 window_opacity_duration    0.2            \
                 active_window_opacity      1.0            \
                 normal_window_opacity      0.8            \
-                window_animation_duration  0.1            \
+                window_animation_duration  0.2            \
                 window_animation_easing    ease_in_sine  \
                 insert_feedback_color      0xff9dd274     \
                 split_ratio                0.50           \
