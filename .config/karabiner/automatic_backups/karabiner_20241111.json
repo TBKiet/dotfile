@@ -61,14 +61,6 @@
                         "vendor_id": 12625
                     },
                     "ignore": false
-                },
-                {
-                    "identifiers": {
-                        "device_address": "d7-49-00-73-04-85",
-                        "is_keyboard": true,
-                        "is_pointing_device": true
-                    },
-                    "ignore": false
                 }
             ],
             "name": "Default profile",
