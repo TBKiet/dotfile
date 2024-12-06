@@ -9,8 +9,6 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
   spec = {
-    --toggle term
-    { "akinsho/toggleterm.nvim", version = "*", config = true },
     -- add LazyVim and import its plugins
     {
 

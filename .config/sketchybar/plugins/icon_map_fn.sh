@@ -428,6 +428,9 @@ function icon_map() {
   "WhatsApp")
     icon_result=":whats_app:"
     ;;
+  "Zalo")
+    icon_result="􁋬"
+    ;;
   *)
     icon_result=":default:"
     ;;

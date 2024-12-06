@@ -144,6 +144,8 @@ unset __conda_setup
 alias python='/usr/local/bin/python3'
 alias python3='/usr/local/bin/python3'
 alias pip='/usr/local/bin/python3 -m pip'
-
+alias ls='eza --icons'
+alias vfzf='nvim $(fzf --preview="bat --color=always {}")'
+source <(fzf --zsh)
 sudo yabai --load-sa
 neofetch
