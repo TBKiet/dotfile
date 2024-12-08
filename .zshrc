@@ -144,8 +144,17 @@ unset __conda_setup
 alias python='/usr/local/bin/python3'
 alias python3='/usr/local/bin/python3'
 alias pip='/usr/local/bin/python3 -m pip'
-alias ls='eza --icons'
+
+alias v='nvim'
 alias vfzf='nvim $(fzf --preview="bat --color=always {}")'
+
+alias ls='eza --icons'
+alias lt="eza -lTg --icons=always"
+alias lt2="eza -lTg --level=2 --icons=always"
+alias lt3="eza -lTg --level=3 --icons=always"
+
+alias alacritty='alacritty --working-directory "$PWD"'
+
+eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 sudo yabai --load-sa
-neofetch
