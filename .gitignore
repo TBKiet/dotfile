@@ -1,0 +1,45 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+.config/gcloud/logs/
+.config/raycast/extensions/*/logs/
+
+# Cache directories
+.cache/
+*.cache
+.config/*/cache/
+
+# Session files
+.config/github-copilot/*/chat-sessions/
+.config/github-copilot/*/chat-edit-sessions/
+
+# Temporary files
+*.tmp
+*.temp
+.config/*/tmp/
+
+# SSH keys and sensitive data
+.ssh/id_*
+.ssh/*.pem
+.ssh/*.key
+
+# Git submodules that are dependencies
+.tmux/plugins/*/
+.vim/pack/*/
+
+# Specific application caches
+.config/gcloud/logs/
+.config/raycast/extensions/*/node_modules/
+.config/simple-update-notifier/
+
+# Shell history files
+.bash_history
+.zsh_history 
