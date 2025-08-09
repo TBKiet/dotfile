@@ -1,0 +1,13 @@
+2025-08-05 23:20:52,925 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2025-08-05 23:20:52,926 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations']
+2025-08-05 23:20:52,928 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'configurations', 'describe']
+2025-08-05 23:20:52,929 DEBUG    root            Running [gcloud.config.configurations.describe] with arguments: [--format: "value[separator=""](properties.core.account,properties.core.project)", CONFIGURATION_NAME: "default"]
+2025-08-05 23:20:52,931 DEBUG    root            Chosen display Format:default value[separator=""](properties.core.account,properties.core.project)
+2025-08-05 23:20:52,932 INFO     root            Display format: "default value[separator=""](properties.core.account,properties.core.project)"
+2025-08-05 23:20:52,944 INFO     ___FILE_ONLY___ tbkiet22@clc.fitus.edu.vnarboreal-device-441920-n7
+
+2025-08-05 23:20:53,009 DEBUG    root            Checking for updates...
+2025-08-05 23:20:53,119 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-08-05 23:20:53,409 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/11" 200 239806
+2025-08-05 23:20:53,583 DEBUG    root            Updating notification cache...
+2025-08-05 23:20:53,584 DEBUG    root            Activating notification: [default]

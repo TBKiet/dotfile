@@ -1,4 +1,3 @@
-
 [colors.bright]
 black = "0x4d4d4d"
 blue = "0x0026ff"
@@ -28,14 +27,14 @@ TERM = "alacritty"
 
 [window]
 decorations = "Buttonless"
+opacity = 0.85
 
 [font]
-size = 20
+size = 30
 
 [font.normal]
-family = "SauceCodePro Nerd Font"
+family = "Hack Nerd Font Mono"
 style = "Regular"
 
 [general]
 live_config_reload = true
-

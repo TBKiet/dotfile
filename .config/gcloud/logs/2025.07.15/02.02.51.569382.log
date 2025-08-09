@@ -1,0 +1,3 @@
+2025-07-15 02:02:51,582 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-07-15 02:02:51,587 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2025-07-15 02:02:51,589 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "tbkiet22@clc.fitus.edu.vn", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "arboreal-device-441920-n7"]

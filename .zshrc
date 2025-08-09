@@ -1,5 +1,7 @@
+# Enable instant prompt for maximum speed
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=verbose
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-alias tmux='tmux -u'
 ZSH_THEME="powerlevel10k/powerlevel10k"
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -28,6 +30,8 @@ export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 export PATH="/opt/homebrew/opt/gcc/bin:$PATH"
 
+# Set webstorm path
+export WEBSTORM_PATH="/Applications/WebStorm.app/Contents/MacOS/webstorm"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -118,14 +122,11 @@ source $ZSH/oh-my-zsh.sh
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run alias.
+# For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# To customize prompt, run p10k configure or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -141,9 +142,11 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-alias python='/usr/local/bin/python3'
-alias python3='/usr/local/bin/python3'
-alias pip='/usr/local/bin/python3 -m pip'
+
+# # Use Homebrew Python
+# alias python='/opt/homebrew/bin/python3'
+# alias python3='/opt/homebrew/bin/python3'
+# alias pip='/opt/homebrew/bin/python3 -m pip'
 
 alias v='nvim'
 alias vfzf='nvim $(fzf --preview="bat --color=always {}")'
@@ -157,4 +160,25 @@ alias alacritty='alacritty --working-directory "$PWD"'
 
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
-sudo yabai --load-sa
+# sudo yabai --load-sa
+# export PATH="/opt/anaconda3/bin:$PATH"  # commented out by conda initialize
+fpath=($fpath)
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+
+# pnpm
+export PNPM_HOME="/Users/Kiet/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+alias g++="clang++"
+
+# Auto run fastfetch with Pokemon on terminal startup (only if not in instant prompt mode)
+# alias fastfetch="/Users/Kiet/pokemon-colorscripts/random-pokemon-fastfetch.sh"
+# if [[ -z "${P10K_INSTANT_PROMPT}" ]]; then
+#     fastfetch
+# fi
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

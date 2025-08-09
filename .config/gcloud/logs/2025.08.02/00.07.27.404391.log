@@ -1,0 +1,12 @@
+2025-08-02 00:07:27,420 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2025-08-02 00:07:27,426 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2025-08-02 00:07:27,427 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--account: "tbkiet22@clc.fitus.edu.vn", --configuration: "default", --format: "value(name)", PROJECT_ID_OR_NUMBER: "arboreal-device-441920-n7"]
+2025-08-02 00:07:27,490 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2025-08-02 00:07:28,624 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/arboreal-device-441920-n7?alt=json HTTP/11" 200 None
+2025-08-02 00:07:28,626 DEBUG    root            Chosen display Format:default value(name)
+2025-08-02 00:07:28,627 INFO     root            Display format: "default value(name)"
+2025-08-02 00:07:28,652 INFO     ___FILE_ONLY___ My First Project
+
+2025-08-02 00:07:28,654 DEBUG    root            Checking for updates...
+2025-08-02 00:07:28,684 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2025-08-02 00:07:29,393 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/11" 200 239806
