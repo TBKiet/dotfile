@@ -31,6 +31,12 @@ Thumbs.db
 .ssh/*.pem
 .ssh/*.key
 
+# Google Cloud credentials and sensitive data
+.config/gcloud/application_default_credentials.json
+.config/gcloud/credentials_db
+.config/gcloud/access_tokens.db
+.config/gcloud/legacy_credentials/
+
 # Git submodules that are dependencies
 .tmux/plugins/*/
 .vim/pack/*/
