@@ -1,4 +1,4 @@
-# OS generated files
+# macOS
 .DS_Store
 .DS_Store?
 ._*
@@ -7,45 +7,72 @@
 ehthumbs.db
 Thumbs.db
 
-# Log files
-*.log
-.config/gcloud/logs/
-.config/raycast/extensions/*/logs/
+# SSH keys và private data
+.ssh/
+*.pem
+*.key
+*.crt
 
-# Cache directories
-.cache/
-*.cache
-.config/*/cache/
+# Cache và temporary files
+dotfiles/.config/*/cache/
+dotfiles/.config/*/Cache/
+dotfiles/.config/*/logs/
+dotfiles/.config/*/log/
+dotfiles/.config/*/tmp/
+dotfiles/.config/*/temp/
 
-# Session files
-.config/github-copilot/*/chat-sessions/
-.config/github-copilot/*/chat-edit-sessions/
+# Google Cloud SDK
+dotfiles/.config/gcloud/logs/
+dotfiles/.config/gcloud/cache/
+dotfiles/.config/gcloud/access_tokens.db
+dotfiles/.config/gcloud/credentials.db
+dotfiles/.config/gcloud/default_configs.db
+dotfiles/.config/gcloud/.last_*
 
-# Temporary files
-*.tmp
-*.temp
-.config/*/tmp/
+# Neovim cache
+dotfiles/.config/nvim/plugin/
+dotfiles/.config/nvim/.repro/
 
-# SSH keys and sensitive data
-.ssh/id_*
-.ssh/*.pem
-.ssh/*.key
+# Vim cache
+dotfiles/.vim/.netrwhist
+dotfiles/.vim/view/
+dotfiles/.vim/swap/
+dotfiles/.vim/backup/
+dotfiles/.vim/undo/
 
-# Google Cloud credentials and sensitive data
-.config/gcloud/application_default_credentials.json
-.config/gcloud/credentials_db
-.config/gcloud/access_tokens.db
-.config/gcloud/legacy_credentials/
+# tmux
+dotfiles/.tmux/plugins/tpm/.git/
+dotfiles/.tmux/plugins/*/.git/
 
-# Git submodules that are dependencies
-.tmux/plugins/*/
-.vim/pack/*/
+# Homebrew
+Brewfile.lock.json
 
-# Specific application caches
-.config/gcloud/logs/
-.config/raycast/extensions/*/node_modules/
-.config/simple-update-notifier/
+# Backup directories created by scripts
+.dotfiles_backup_*/
 
-# Shell history files
-.bash_history
-.zsh_history 
+# IDE và editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Application caches
+dotfiles/.config/*/node_modules/
+dotfiles/.config/github-copilot/hosts.json
+dotfiles/.config/*/user-data/
+dotfiles/.config/raycast/extensions/*/node_modules/
+
+# Fish shell
+dotfiles/.config/fish/fish_variables
+dotfiles/.config/fish/completions/
+
+# History files (should not be shared)
+dotfiles/.bash_history
+dotfiles/.zsh_history
+dotfiles/.lesshst
+
+# Local configuration overrides
+*.local
+*_local
+local.* 
